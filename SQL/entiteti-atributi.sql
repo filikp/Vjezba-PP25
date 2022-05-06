@@ -92,7 +92,7 @@ use djecji_vrtic;
 
 create table odgojna_skupina (
     broj_djece varchar(50),
-    odgojateljica varchar(50),
+    odgojateljica varchar(50)
 );
 
 create table odgojateljica (
@@ -157,5 +157,5 @@ create table osoba (
 create table posao (
     vrsta_posla varchar(50),
     trajanje_posla varchar(50),
-    lokacija_posla varchar(50),
+    lokacija_posla varchar(50)
 );
