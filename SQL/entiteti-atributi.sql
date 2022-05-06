@@ -84,3 +84,78 @@ create table prostor (
     zauzetost  varchar(50)
 );
 
+# Dječji vrtić
+
+drop database if exists djecji_vrtic;
+create database djecji_vrtic;
+use djecji_vrtic;
+
+create table odgojna_skupina (
+    broj_djece varchar(50),
+    odgojateljica varchar(50),
+);
+
+create table odgojateljica (
+    ime varchar(50),
+    prezime varchar(50),
+    OIB varchar(50),
+    IBAN varchar(50),
+    email varchar(50),
+    strucna_sprema varchar(50)
+);
+
+# Muzej
+
+drop database if exists muzej;
+create database muzej;
+use muzej;
+
+create table izlozba (
+    vrsta_djela varchar(50),
+    broj_djela varchar(50),
+    kustos varchar(50),
+    sponzor varchar(50)
+);
+
+create table kustos (
+    ime varchar(50),
+    prezime varchar(50),
+    OIB varchar(50),
+    IBAN varchar(50),
+    email varchar(50)
+);
+
+create table sponzor (
+    ime_sponzora varchar(50),
+    vrijednost_sponzora varchar(50),
+    trajanje_ugovora varchar(50)
+);
+
+# Samostan
+
+drop database if exists samostan;
+create database samostan;
+use samostan;
+
+create table svecenik (
+    osoba varchar(50),
+    nadredjeni_svecenik varchar(50)
+);
+
+create table nadredjeni_svecenik (
+    osoba varchar(50)
+);
+
+create table osoba (
+    ime varchar(50),
+    prezime varchar(50),
+    OIB varchar(50),
+    IBAN varchar(50),
+    email varchar(50)
+);
+
+create table posao (
+    vrsta_posla varchar(50),
+    trajanje_posla varchar(50),
+    lokacija_posla varchar(50),
+);
